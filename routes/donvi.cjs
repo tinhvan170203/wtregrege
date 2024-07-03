@@ -1,8 +1,8 @@
 const express = require('express');
 
 const router = express.Router();
-const middlewareController = require('../middlewares/verifyToken');
-const donvi = require('../controllers/donvi');
+const middlewareController = require('../middlewares/verifyToken.cjs');
+const donvi = require('../controllers/donvi.cjs');
 
 router.get('/fetch',middlewareController.verifyToken, donvi.getDonvis);
 router.get('/fetch/active',middlewareController.verifyToken, donvi.getDonvisActive);
