@@ -2,10 +2,10 @@ const express = require('express');
 
 const router = express.Router();
 
-const auth = require('../controllers/auth');
-const middlewareController = require('../middlewares/verifyToken');
-const authmobile = require('../controllers/authmobile');
-// const middlewareController = require('../middlewares/verifyToken');
+const auth = require('../controllers/auth.cjs');
+const middlewareController = require('../middlewares/verifyToken.cjs');
+const authmobile = require('../controllers/authmobile.cjs');
+// const middlewareController = require('../middlewares/verifyToken.cjs');
 
 router.post('/login', auth.login )
 router.post('/mobile/login', authmobile.login )
