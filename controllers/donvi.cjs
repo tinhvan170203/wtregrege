@@ -1,4 +1,4 @@
-const Donvis = require("../models/Donvis");
+const Donvis = require("../models/Donvis.cjs");
 
 module.exports = {
   getDonvis: async (req, res) => {
