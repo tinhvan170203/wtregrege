@@ -40,8 +40,8 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '50mb'}));
 const port = process.env.port || 3000;
 
 ;
-const authRoute = require('./routes/auth');
-const donviRoute = require('./routes/donvi');
+const authRoute = require('./routes/auth.cjs');
+const donviRoute = require('./routes/donvi.cjs');
 
 
 app.use('/don-vi', donviRoute);
