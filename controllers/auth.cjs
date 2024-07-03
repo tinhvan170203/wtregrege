@@ -1,9 +1,9 @@
 const jwt = require("jsonwebtoken");
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
-const Accounts = require("../models/Accounts");
-const Donvis = require("../models/Donvis");
-const Reports = require("../models/Report");
+const Accounts = require("../models/Accounts.cjs");
+const Donvis = require("../models/Donvis.cjs");
+const Reports = require("../models/Report.cjs");
 module.exports = {
   login: async (req, res) => {
     // console.log(req.body)
