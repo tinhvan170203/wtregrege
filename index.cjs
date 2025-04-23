@@ -31,7 +31,7 @@ app.use((req, res, next)=>{
   
 app.use(cors({
     origin: "*",
-    origin: ["http://localhost:5173", "http://localhost:3000", "http://192.168.0.103:3000","https://khaosathailongcahungyen.vercel.app/"],
+    origin: ["http://localhost:5173", "http://localhost:3000", "http://192.168.0.103:3000","https://khaosathailongcahungyen.vercel.app/","https://khaosathailongcahungyen.vercel.app/"],
     credentials: true,
 }));
 // app.use(express.json());
